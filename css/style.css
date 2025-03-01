@@ -1,0 +1,212 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", serif;
+   list-style: none;
+}
+body{
+   width: 100%;
+   height: 100vh;
+   background-color: #2C2D2F;
+}
+:root{
+   --primary-color: #4B2A18;
+   --secondary-color: #4f772d;
+}
+/* LANDING PAGE containing- navbar and hero section */
+#Home{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   /* overflow: hidden; */
+}
+
+/* For background of Landingpage section */
+#Home::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(/Image/bg4.jpeg);
+   /* background-color: #dc9f81bb; */
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: -1;
+}
+/* Mainly to form background image darker */
+.wrap{
+   width: 100%;
+   height: 100%;
+   background: #00000096;
+   padding: 20px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+/* NAVBAR section content */
+nav{
+   width: 60vw;
+   height: 7vh;
+   background-color: var(--primary-color);
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 0 1rem;
+}
+
+nav ul {
+   display: flex;
+   justify-content: space-center;
+   align-items: center; 
+   gap: 1rem; 
+   margin: 0; 
+   padding: 0; 
+   /* border: 1px solid red; */
+}
+nav a{
+   padding: 0.3rem 1rem;
+   font-size: 1em;
+   font-weight: 500;
+   letter-spacing: 0.1em;
+   color: #DFD8B6;
+   text-decoration: none;
+}
+nav a:hover{
+   color: var(--secondary-color);
+}
+nav a:active{
+   color: red
+}
+
+nav i{
+   /* font-weight: 800; */
+   font-size: 1.2em;
+}
+.logo_image{
+   width: 3.8vw;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+.logo_image > img{
+   width: 100%;
+   height: auto;
+   border: 3px solid #DFD8B6;
+   border-radius: 50%;
+}
+/* Home (Hero Section) */
+#Hero{
+   width: 100vw;
+   height: calc(100vh - 7vh);
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   gap: 25rem;
+}
+.cointainer{
+   width: 70vw;
+   height: 100%;
+   color: #DFD8B6;
+   padding: 10rem 8rem; 
+}
+.cointainer span{
+   color: var(--secondary-color);
+   font-weight: 700;
+
+}
+.cointainer h1{
+   font-weight: 600;
+   margin-top: 1rem;
+   margin-bottom: 2rem
+}
+.btn1{
+   border: none;
+   background-color: var(--secondary-color);
+   color: #fff;
+   padding: 0.4em 1em;
+   border-radius: 1.5rem;
+}
+.btn2{
+   border: 3px solid var(--secondary-color);
+   background-color: transparent;
+   color: #fff;
+   border-radius: 1.5rem;
+   padding: 0.2em 0.8em;
+}
+.contact_info{
+   width: 2.8vw;
+   height: 33%;
+   border-radius: 1.5rem 0 0 1.5rem;
+   padding-right: 0;
+   background-color: var(--primary-color);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   /* gap: 2rem; */
+}
+.contact_info i{
+   font-size: 1.1rem;
+   color: #DFD8B6;
+}
+/* ABOUT SECTION */
+#About{
+   width: 100%;
+   height: 100%;
+   /* background-color: #8def9f; */
+   /* overflow: hidden; */
+   border-radius: 1rem 1rem 0 0;
+   background-image: url(/Image/bgcover.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.quality_info{
+   width: 40%;
+   height: 22%;
+   display: flex;
+   gap: 2rem;
+}
+.quality_info > div{
+   width: 25%;
+   height: 100%;
+   /* border: 1px solid red; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: -50%;
+   z-index: 1;
+   padding: 1rem;
+}
+.quality_info > div::before{
+   position: absolute;
+   border-radius: 50%;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: var(--secondary-color);
+   opacity: 0.9;
+}
+.quality_info img{
+   width:45%;
+   height: auto;
+}
+.quality_info h3{
+   width: 80%;
+   font-size: 0.8rem;
+   text-align: center;
+   line-height: 1rem;
+   margin-top: 0.6rem;
+   color: #DFD8B6;
+}
