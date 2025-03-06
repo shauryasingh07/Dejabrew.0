@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deja Brew | visit our coffee shop</title>
-    <link rel="icon" href="./Image/logo.png">
+    <link rel="icon" href="img/logo.webp">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,13 +48,13 @@
         <nav>
             <ul>
                 <li><a href="#Home" class="nav-option">Home</a></li>
-                <li><a href="#About" class="nav-option">About</a></li>
-                <li><a href="#Menu" class="nav-option">Menu</a></li>
+                <li><a href="#about" class="nav-option">About</a></li>
+                <li><a href="#menu" class="nav-option">Menu</a></li>
             </ul>
-            <div class="logo_image"><img src="/Image/logo.png" alt=""></div>
+            <div class="logo_image"><img src="img/logo.webp" alt=""></div>
             <ul>
-                <li><a href="#Blog" class="nav-option">Blog</a></li>
-                <li><a href="#Contact" class="nav-option">Contact</a></li>
+                <li><a href="#blog" class="nav-option">Blog</a></li>
+                <li><a href="#contact" class="nav-option">Contact</a></li>
                 <li>
                     <a href="Search">
                         <i class="bi bi-search"></i>                    
@@ -72,7 +72,9 @@
                 <h2>Welcome!</h2>
                 <h1>Experience coffee like never before—"<span>unforgettable</span>, <span>smooth</span>, and <span>bold</span>".</h1>
                 <button class="btn1">Know more</button>
-                <button class="btn2">Know more</button>
+                <button class="btn2">
+                  <i class="fa-solid fa-arrow-down"></i>                
+                </button>
             </div>
             <div class="contact_info">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -82,33 +84,9 @@
         </section>
       </div>
     </div>
-    <!-- <section id="About">
-        <div class="quality_info">
-            <div>
-                <img src="/Image/svgrecycle.svg" alt="">
-                <h3>100% Recycled Materials</h3>
-            </div>
-            <div>
-                <img src="/Image/svgbean.svg" alt="">
-                <h3>Fresh From The Feild</h3>
-            </div>
-            <div>
-                <img src="/Image/svgplant.svg" alt="">
-                <h3>Donted From Each Sale</h3>
-            </div>
-        </div>
-        <div class="text_content"> 
-            <h1></h1>
-            <p></p>
-        </div>  
-        <div class="image_content">
-            <img src="" alt="">
-        </div>
-    
-    </section> -->
     <section id="about">
         <div class="about_image">
-          <img src="/Image/worker.jpeg" alt="" />
+          <img src="img/worker.webp" alt="" />
         </div>
 
         <div class="about_text">
@@ -144,7 +122,140 @@
     </section>
     <!-- menu section -->
     <section id="menu">
-      <img src="/Image/menu.png" alt="" />
+      <div class="menu-bg">
+        <h3>what Happens Here</h3>
+        <h1>EXPLORE OUR MENU.</h1>
+        <div class="flex-menu">
+          <div class="menu-card1">
+            <div class="menu-item">
+              <!-- <span>NEW</span> -->
+              <div class="align-item">
+                <h2>CAFFE LATTE</h2>
+                <h3>$2.95</h3>
+              </div>
+              <div class="item-info">
+                <p>Fresh brewed coffee and steamed milk</p> 
+                <button>BUY</button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>CAFFE MOCHA</h2>
+                <h3>$3.67</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso With Milk, and Whipped Cream</p>
+                <button>BUY</button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>WHITE CHOCOLATE MOCHA</h2>
+                <h3>$2.79</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso, White Chocolate, Milk, Ice and Cream</p>
+                <button>BUY</button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>CAFFE AMERICANO</h2>
+                <h3>$3.06</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso Shots and Light Layer of Cream</p>
+                <button>BUY</button>
+            </div>
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>CAPPUCCINO</h2>
+                <h3>$4.03</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso, and Smoothed Layer of Foam</p>
+                <button>BUY</button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>VANILLA LATTE</h2>
+                <h3>$3.65</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso Milk With Flavour and Cream</p>
+                <button>BUY</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card2">
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>ICED CARAMEL LATTE</h2>
+                <h3>$4.67</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso, Milk, Ice and Caramel Sauce</p>
+                <button>BUY</button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>ESPRESSO MACCHIATO</h2>
+                <h3>$2.98</h3>
+              </div>
+              <div class="item-info">
+                 <p>Rich Espresso With Milk and Foam</p>
+                 <button>BUY</button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>CARAMEL MACCHIATO</h2>
+                <h3>$2.54</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso, vanilla-flavoured syrup and milk</p>
+                <button>BUY</button>
+            </div> 
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>ICED SMOKED LATTE</h2>
+                <h3>$3.05</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso, ice, with smoked butterscotch</p>
+                <button>BUY</button>
+            </div>
+            </div>
+            <div class="menu-item">
+              <div class="align-item">
+                <h2>ICED CAFFE MOCHA</h2>
+                <h3>$2.60</h3>
+              </div>
+              <div class="item-info">
+                <p>Espresso, Ice, with smoked butterscotch</p>
+                <button>BUY</button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span>NEW</span>
+              <div class="align-item">
+                <h2>ICED GINGERBREAD LATTE</h2>
+                <h3>$3.92</h3>
+              </div>
+              <div class="item-info">
+                <p>Fspresso, Milk, Ice, and Gingerbread Flavour</p>
+                <button>BUY</button>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- <img src="img/menu.webp" alt="" /> -->
     </section>
     <!-- count section -->
     <section id="count">
@@ -180,25 +291,25 @@
     <!-- blogs section -->
     <section id="blog">
       <div class="bgpattern">
-        <img src="/Image/bean.png" alt="" />
-        <img src="/Image/cupdesign.png" alt="" />
-        <img src="/Image/coldcoffee.png" alt="" />
-        <img src="Image/sweet.png" alt="" />
+        <img src="img/bean.webp" alt="" />
+        <img src="img/cupdesign.webp" alt="" />
+        <img src="img/coldcoffee.webp" alt="" />
+        <img src="img/sweet.webp" alt="" />
       </div>
       <div class="bgpattern_2">
-        <img src="/Image/bean.png" alt="" />
-        <img src="/Image/cupdesign.png" alt="" />
-        <img src="/Image/coldcoffee.png" alt="" />
-        <img src="Image/sweet.png" alt="" />
+        <img src="img/bean.webp" alt="" />
+        <img src="img/cupdesign.webp" alt="" />
+        <img src="img/coldcoffee.webp" alt="" />
+        <img src="img/sweet.webp" alt="" />
       </div>
       <h2>RECENT BLOGS</h2>
       <div class="underline">
-        <img src="Image/underline2.png" alt="" />
+        <img src="img/underline2.webp" alt="" />
       </div>
       <div class="blog">
         <div class="blogsec_1">
           <div class="blogimage">
-            <img src="Image/blog1.jpg" alt="" />
+            <img src="img/blog1.webp" alt="" />
             <h4>31 Jan</h4>
           </div>
           <div class="blogtext">
@@ -214,7 +325,7 @@
         </div>
         <div class="blogsec_1">
           <div class="blogimage">
-            <img src="/Image/blog2.jpg" alt="" />
+            <img src="img/blog2.webp" alt="" />
             <h4>31 Jan</h4>
           </div>
           <div class="blogtext">
@@ -230,7 +341,7 @@
         </div>
         <div class="blogsec_1">
           <div class="blogimage">
-            <img src="Image/blog3.jpg" alt="" />
+            <img src="img/blog3.webp" alt="" />
             <h4>31 Jan</h4>
           </div>
           <div class="blogtext">
@@ -251,38 +362,38 @@
       <div>
         <h2 style="color: white; font-weight: 400">GALLERY SHOW</h2>
         <div class="underline">
-          <img src="Image/underline.png" alt="" />
+          <img src="img/underline.webp" alt="" />
         </div>
         <div class="gallery">
           <div class="photo_1">
-            <img src="Image/gallery1.jpg" alt="" />
-            <img src="Image/gallery8.jpg" alt="" />
-            <img src="Image/gallery2.jpg" alt="" />
-            <img src="Image/gallery4.jpg" alt="" />
+            <img src="img/gallery1.webp" alt="" />
+            <img src="img/gallery8.webp" alt="" />
+            <img src="img/gallery2.webp" alt="" />
+            <img src="img/gallery4.webp" alt="" />
           </div>
           <div class="photo_2">
-            <img src="Image/gallery5.jpg" alt="" />
-            <img src="Image/gallery6.jpg" alt="" />
-            <img src="Image/gallery7.jpg" alt="" />
-            <img src="Image/gallery9.jpg" alt="" />
+            <img src="img/gallery5.webp" alt="" />
+            <img src="img/gallery6.webp" alt="" />
+            <img src="img/gallery7.webp" alt="" />
+            <img src="img/gallery9.webp" alt="" />
           </div>
         </div>
       </div>
     </section>
     <section id="brand">
-      <img src="Image/brand1.png" alt="" />
+      <img src="img/brand1.webp" alt="" />
       <!-- <img src="./img/brand2.jpg" alt="" /> -->
-      <img src="Image/brand3.png" alt="" />
-      <img src="Image/brand4.png" alt="" />
-      <img src="Image/brand6.png" alt="" />
-      <img src="Image/brand5.png" alt="" />
+      <img src="img/brand3.webp" alt="" />
+      <img src="img/brand4.webp" alt="" />
+      <img src="img/brand5.webp" alt="" />
+      <img src="img/brand6.webp" alt="" />
     </section>
   <!-- contact and footer part -->
   <footer id="contact">
     <div class="details">
       <div class="connect">
         <div class="logo">
-          <img src="Image/logo.png" alt="" />
+          <img src="img/logo.webp" alt="" />
         </div>
         <div class="location">
           <p>A108 Adam Street</p>
